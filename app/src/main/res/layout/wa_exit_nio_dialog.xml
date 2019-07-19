@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/curve_background"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/n_i_o_question"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/wa_to_rectification"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNIOCancel"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:background="@drawable/btn_gray"
+            android:textAllCaps="false"
+            android:textSize="@dimen/normal_size" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:padding="10dp"
+            android:id="@+id/btnNIOConfirm"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_sky"
+            android:text="@string/confirm"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/normal_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+</LinearLayout>

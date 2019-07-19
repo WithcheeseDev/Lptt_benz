@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvKAThisArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_area"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvKAProdCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/prod_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRectiMechEE"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/select_parking_lot"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <!--Parking Area-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--Parking Area G-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rdParkingZoneO"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area F-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneG"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area E-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneF"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area D-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneE"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area C-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneD"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area B-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneC"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area A-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneB"
+                    android:layout_marginTop="3dp">
+
+                </com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area P-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true">
+
+                </com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area O-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@id/rdParkingZoneO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneP"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area N-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneO"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area M-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneN"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area L-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneM"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area K-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneL"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area J-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneK"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area I-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneJ"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+                <!--Parking Area H-->
+                <com.withcheese.lptt_benz.view.RadioParkingZone
+                    android:id="@+id/rdParkingZoneH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdParkingZoneI"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"></com.withcheese.lptt_benz.view.RadioParkingZone>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBookingIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/book_the_car_in_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_size" />
+
+                <TextView
+                    android:id="@+id/tvBookingZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/parking_zone"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnKAConfirm"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_common_selector"
+                    android:text="@string/yes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_size" />
+
+                <Button
+                    android:id="@+id/btnKACancel"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_common_selector"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

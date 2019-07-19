@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#11000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="220dp"
+        android:layout_height="320dp"
+        android:background="@drawable/curve_box"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/would_to_do"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_size" />
+
+        <Button
+            android:id="@+id/btnRectDialogCancel"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/cancel"
+            android:background="@drawable/btn_common_selector"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <Button
+            android:id="@+id/btnRectDialogInProgress"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/in_progress"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_common_selector"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <Button
+            android:id="@+id/btnRectDialogDone"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/done_transfer"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_common_selector"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSearchThisLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSearchProductID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/prod_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/tvSearchGermanID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/model_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrGermanProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="german" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrVinNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="vin" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrCommNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="comm" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrEngineNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="engine" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrColorCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="color" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrTrimCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="trim" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrPM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="pm" />
+
+        <com.withcheese.lptt_benz.view.ProductAttrItem
+            android:id="@+id/productAttrSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="set" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tvShowNowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/stay_location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <com.withcheese.lptt_benz.view.ThisProcessItem
+        android:id="@+id/itemProcessSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRectMechEENextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/select_next_location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRect2WA1"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:background="@color/light_green"
+                    android:padding="10dp"
+                    android:text="WA 1,2,3"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+                <Button
+                    android:id="@+id/btnRect2WA2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_green"
+                    android:padding="10dp"
+                    android:text="WA 4"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+                <Button
+                    android:id="@+id/btnRect2EOL"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_green"
+                    android:padding="10dp"
+                    android:text="@string/end_of_line"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+                <Button
+                    android:id="@+id/btnRect2SW"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_green"
+                    android:padding="10dp"
+                    android:text="Shower\nTest"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+                <Button
+                    android:id="@+id/btnRect2FL"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_green"
+                    android:text="@string/finish_line"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+                <Button
+                    android:id="@+id/btnRect2PAVoCA"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_green"
+                    android:text="PA/VoCA"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRect2KA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_red"
+                    android:padding="10dp"
+                    android:text="Keeping\nArea"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+                <Button
+                    android:id="@+id/btnRect2OtherRect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/light_red"
+                    android:padding="10dp"
+                    android:text="Paint rect."
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

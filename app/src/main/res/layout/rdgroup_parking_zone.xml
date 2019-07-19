@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Parking Area-->
+
+    <!--Area Partition 2-->
+    <RadioGroup
+        android:id="@+id/rdSecondParkingZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdSixthParkingLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_radio"
+            android:button="@null"
+            android:text="@string/sixth"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdForthParkingLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_btn_radio"
+            android:button="@null"
+            android:text="@string/forth"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdSecondParkingLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_btn_radio"
+            android:button="@null"
+            android:text="@string/second"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <!--Area Partition 1-->
+    <RadioGroup
+        android:id="@+id/rdFirstParkingZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rdSecondParkingZone">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdFifthParkingLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_radio"
+            android:button="@null"
+            android:text="@string/fifth"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdThirdParkingLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_btn_radio"
+            android:button="@null"
+            android:text="@string/third"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rdFirstParkingLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_btn_radio"
+            android:button="@null"
+            android:text="@string/first"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+</RelativeLayout>

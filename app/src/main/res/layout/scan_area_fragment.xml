@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/scan_location_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editBuildingID"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/normal_size" />
+
+                <EditText
+                    android:id="@+id/editAreaID"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/normal_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/log_in"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

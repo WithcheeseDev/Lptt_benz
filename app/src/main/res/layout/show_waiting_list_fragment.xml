@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvSpecialThisLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/all_border"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listViewWaitingListOdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbarSize="15dp"
+            android:scrollbarThumbVertical="@color/light_gray" />
+
+        <ListView
+            android:id="@+id/listViewWaitingListEven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbarSize="20dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvScanJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/scan_the_job_card_first"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <ImageButton
+            android:id="@+id/imgBtnScanning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/scanner_icon_ready" />
+
+        <EditText
+            android:id="@+id/editSpecialScanProductID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:textColor="@null"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>

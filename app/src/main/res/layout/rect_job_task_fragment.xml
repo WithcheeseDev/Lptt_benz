@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvRectTaskThisLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvRectTaskProductID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/prod_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tvRectTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/progress_information"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:checkedButton="@+id/rdRectTaskMechStation"
+        android:id="@+id/rdRectStation"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@id/rdRectTaskMechStation"
+            android:text="@string/mechanic"
+            android:textSize="@dimen/small_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_marginLeft="50dp"
+            android:id="@+id/rdRectTaskEEStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/electic"
+            android:textSize="@dimen/small_size" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editRectTaskDetail"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:gravity="top|start"
+        android:imeOptions="actionDone"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRectTaskCancel"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/strict_gray"
+            android:padding="15dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_size" />
+
+        <Button
+            android:id="@+id/btnRectTaskConfirm"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@color/strict_gray"
+            android:padding="15dp"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_size" />
+    </LinearLayout>
+
+</LinearLayout>

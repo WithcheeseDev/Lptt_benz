@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFLSsThisLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvFLSsProductID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/prod_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Which station was n.I.O?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_size" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:tag="FQG"
+            android:id="@+id/btnFQG"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_common_selector"
+            android:text="@string/fqg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <Button
+            android:id="@+id/btnWSA"
+            android:tag="WSA"
+            android:layout_marginTop="20dp"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_common_selector"
+            android:text="@string/wsa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+
+        <Button
+            android:id="@+id/btnPreBuy"
+            android:tag="PreBuy"
+            android:layout_marginTop="20dp"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_common_selector"
+            android:text="@string/pre_buy_off"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_size" />
+    </LinearLayout>
+</LinearLayout>

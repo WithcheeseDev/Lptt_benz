@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/WAEntGUI"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <com.withcheese.lptt_benz.view.ThisProcessItem
+        android:id="@+id/itemProcessWAEntrance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvWAEntranceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="38dp"
+            android:text="@string/wheel_alignment"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+        <TextView
+            android:id="@+id/tvWAEntProductStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/would_to_continue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnWAEntCancel"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_selector"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/medium_size"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/medium_size" />
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btnWAEntConfirm"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_selector"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
