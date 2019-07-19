@@ -56,7 +56,7 @@ class ScanAreaFragment : Fragment() {
         onRecieve(wifiManager)
         appUpdater = AppUpdater(activity)
                 .setUpdateFrom(UpdateFrom.GITHUB)
-                .setGitHubUserAndRepo("toeyWithcheez1103", "LPTT_benz")
+                .setGitHubUserAndRepo("toeyWithcheez1103", "Lptt_benz")
         appUpdater.start()
     }
 
