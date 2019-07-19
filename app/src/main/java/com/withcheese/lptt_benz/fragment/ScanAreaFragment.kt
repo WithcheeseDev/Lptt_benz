@@ -56,7 +56,8 @@ class ScanAreaFragment : Fragment() {
         onRecieve(wifiManager)
         appUpdater = AppUpdater(activity)
                 .setUpdateFrom(UpdateFrom.GITHUB)
-                .setGitHubUserAndRepo("toeyWithcheez1103", "LPTT_Benz")
+                .setGitHubUserAndRepo("toeyWithcheez1103", "LPTT_benz")
+        appUpdater.start()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -125,7 +126,6 @@ class ScanAreaFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        appUpdater.start()
     }
 
     /*
